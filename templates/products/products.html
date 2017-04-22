@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+<!-- ## here we used bootstrap class 'table' and 'table-striped' to apply some formatting to our table ##  -->
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Purchase</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for product in products %}
+                <tr>
+                    <!--<td><img src="../static/media/{{ product.image }}"></td>-->
+                    <td><img class="prod" src="/media/{{ product.image }}"></td>
+                    <td>{{ product.name }}</td>
+                    <td>{{ product.description }}</td>
+                    <td>${{ product.price }}</td>
+                    <td>
+                        <!--<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="9HZ68RGPE5MMW">
+                            <input type="image" src="https://www.sandbox.paypal.com/en_US/GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.sandbox.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1">                            
+                        </form>-->
+                        <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="C667R4C3RYRBJ">
+                            <input type="image" src="https://www.sandbox.paypal.com/en_US/GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.sandbox.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                    </td>
+<!-- ##  The end of that statement ends in .sandbox. This means that our button is set to send all transactions to the test side of PayPal. In a production environment, this should use the .render method to point all customers to the real PayPal handling systems  ## -->
+                </tr>
+            {% endfor %}
+       
+        </tbody>
+    </table>
+{% endblock %}

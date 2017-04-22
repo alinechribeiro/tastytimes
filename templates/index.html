@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+    <div class="column content">
+          <div class="row">
+       <h1>Welcome. Enjoy the most delicious balls in the world.</h1>
+       <h2>This is the most beautiful present you can give to someone very special.
+       <p>For any occasion:</p> 
+        <ul>
+          <li>accompanying a tea;</li>
+          <li>the best birthday party;</li>
+          <li>welcoming a visit;</li>
+          <li>sending regards.</li>
+        </ul>
+        
+            <div class="col-xs-9">
+                <p>{{ post.content }}</p>
+                <img src="{% static 'media/br7.jpg' %}" style="width:25%; height: 25%; background-color: #12ABB2; color: #ffffff;" class="img-square">                        
+                <img src="{% static 'media/br8.jpg' %}" style="width:25%; height: 25%; background-color: #12ABB2; color: #ffffff;" class="img-square">
+                <img src="{% static 'media/br9.jpg' %}" style="width:25%; height: 25%; background-color: #12ABB2; color: #ffffff;" class="img-square">
+            </div>
+ 
+         <p>On <a href="blogpost.html" title="blogpost"><strong>Blog</strong></a> link you can see some posts about our customers and tips to get the most from the sweet pleasure.</p>
+         <p>Every week we have new ideas for your events.</p>
+         <p>The <a href="about.html" title="about"><strong>About</strong></a> link will tell you more about me. :)</p>
+         <p>If you need some ideas to know where to start, take a look at Resources link, <a href="books.html" title="book"><strong>Buy a Box.</strong></a></p>
+         <p>You can also discover new flavours.</p>
+         <p>Wish you the best!</p> 
+           
+        </div>
+    </div>
+
+{% endblock %}

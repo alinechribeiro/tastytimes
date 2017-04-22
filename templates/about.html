@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+        <div class="row">
+            <div class="col-md-2 col-sm-3 text-center">
+            </div>
+            <div class="col-md-10 col-sm-9">
+                <h3>About Me Title</h3>
+                <div class="row">
+                    <hr>
+                    <div class="col-md-2 col-sm-3 text-center">
+                        <a class="story-img" href="#">
+                        <img src="{% static 'media/br13.jpg' %}" style="width:100%; height: 25%; background-color: #12ABB2; color: #ffffff;" class="img-circle">
+                         </a>
+                    </div>
+                    <div class="col-md-10 col-sm-9">
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed egestas ligula, et mollis turpis. Fusce suscipit scelerisque interdum. Vivamus aliquam, neque id lobortis porttitor, libero est vulputate nibh, vitae egestas nisl urna vel neque. Donec pellentesque dolor ac ante finibus, in facilisis diam molestie. Donec sit amet fermentum orci. Aliquam hendrerit odio quis sem fringilla, ut vulputate urna sodales. Pellentesque eu orci et orci faucibus lacinia. Vivamus vitae porta massa. Nullam pulvinar sapien nulla, vitae laoreet quam malesuada nec. Nulla facilisi. </p>
+                    </div>  
+                </div>
+                <div class="row">
+
+                    <div class="col-md-2 col-sm-3 text-center">
+                        <a class="story-img" href="#">                                            
+                            <img src="{% static 'media/br14.jpg' %}" style="width:100%; height: 25%; background-color: #12ABB2; color: #ffffff;" class="img-circle">
+                        </a>
+                    </div>
+                    <div class="col-md-10 col-sm-9">
+                        <p>Etiam auctor nisl pharetra congue efficitur. Integer rhoncus in purus id finibus. Quisque pretium fermentum nulla ac rhoncus. Quisque nisl massa, sollicitudin rutrum venenatis et, ornare et enim. In tempus efficitur maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit dapibus est sagittis lacinia. Curabitur luctus auctor nisl sit amet convallis. Integer venenatis mi ut diam bibendum ornare. </p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}
