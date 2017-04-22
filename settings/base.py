@@ -21,7 +21,6 @@ INSTALLED_APPS = [
     'main',
     'account',
     'django_forms_bootstrap',
-    'debug_toolbar',
     'tinymce',
     'emoticons',
     'django.contrib.sites',
