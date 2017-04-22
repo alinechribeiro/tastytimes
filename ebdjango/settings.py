@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'main',
     'account',
     'django_forms_bootstrap',
-    'debug_toolbar',
+    #'debug_toolbar',
     'tinymce',
     'emoticons',
     'django.contrib.sites',
@@ -54,6 +54,28 @@ INSTALLED_APPS = [
     'threads',
     'polls',
     #'django-gravatar',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'django.contrib.flatpages',
+    'django_forms_bootstrap',
+    'paypal.standard.ipn',
+    'rest_framework',
+    'tinymce',
+    'emoticons',
+    'disqus',
+    'reusable_blog',
+    'home',
+    'accounts',
+    'paypal_store',
+    'products',
+    'magazines',
+    'threads',
+    'polls',
 ]
 DISQUS_WEBSITE_SHORTNAME = 'tastytimesblog'
 SITE_ID = 1
@@ -189,6 +211,6 @@ TINYMCE_JS_ROOT = os.path.join(BASE_DIR, "static", "js",
                                "tinymce", "tinymce.min.js")
 
 # PayPal Settings
-SITE_URL = 'http://127.0.0.1:8000'
-PAYPAL_NOTIFY_URL = ' http://291d762f.ngrok.io/a-very-hard-to-guess-url/'
+SITE_URL = 'http://tastytimes.herokuapp.com/'
+PAYPAL_NOTIFY_URL = 'http://tastytimes.herokuapp.com/a-very-hard-to-guess-url/'
 PAYPAL_RECEIVER_EMAIL = 'alinechribeiro-facilitator@gmail.com'
