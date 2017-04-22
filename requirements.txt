@@ -4,7 +4,6 @@ awsebcli==3.10.0
 beautifulsoup4==4.4.1
 blessed==1.14.1
 botocore==1.5.22
-Brlapi==0.6.1
 cement==2.8.2
 chardet==2.2.1
 codegen==1.0
